@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODING MASTER | Specialized in Modern Web</title>
+    <meta name="description" content="Portfolio of a Full Stack Developer specializing in modern web technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">CODING <span class="accent">MASTER</span></a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title reveal">Building <span class="accent">Digital</span> Experiences</h1>
+                <p class="hero-subtitle reveal">Full Stack Developer & UI/UX Enthusiast</p>
+                <div class="hero-buttons reveal">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>I am a passionate web developer with a keen eye for design and a drive for creating
+                            performant, user-friendly applications. With expertise in modern JavaScript frameworks and
+                            responsive design, I turn complex problems into elegant solutions.</p>
+                        <p>My focus is on writing clean, maintainable code and building interfaces that users love to
+                            interact with.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Backend</h3>
+                        <p>Node.js, Express, Python, SQL/NoSQL</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Tools</h3>
+                        <p>Git, VS Code, Feynman Board, Docker</p>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Design</h3>
+                        <p>Figma, UI/UX Principles, Responsive Layouts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="project1.png" alt="Futuristic AI Robot"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Robotics Platform</h3>
+                            <p>A comprehensive dashboard for managing online stores with real-time data visualization.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="project2.png" alt="Future Transport"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3>Advanced Vehicles</h3>
+                            <p>A full-featured social platform allowing users to connect and share content.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Socket.io</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="project3.png" alt="AI Technology Website"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3>Tech Solutions</h3>
+                            <p>Productivity tool for teams to organize and track their daily tasks.</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+                <p class="contact-text">Interested in working together? Let's talk.</p>
+
+                <div class="contact-reveal-wrapper">
+                    <button id="contact-reveal-btn" class="btn btn-primary">Show Contact Number</button>
+                    <p id="contact-number-display" class="hidden-number" aria-live="polite"></p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/sinhashourya2011-commits" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+                        aria-label="LinkedIn">LinkedIn</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CODING MASTER. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
